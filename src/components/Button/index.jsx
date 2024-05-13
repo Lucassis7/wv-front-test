@@ -1,8 +1,14 @@
+import "./Button.css";
+
 function Button({ buttonName, icon }) {
   return (
-    <div>
-      <img src={icon} alt={`Ícone do botão: ${buttonName}`} />
-      <p>{buttonName}</p>
+    <div className="btn">
+      <img
+        src={icon}
+        alt={`Ícone do botão: ${buttonName}`}
+        className="icon-btn"
+      />
+      <p className="text-btn">{buttonName}</p>
     </div>
   );
 }

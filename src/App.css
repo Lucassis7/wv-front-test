@@ -9,3 +9,136 @@
   text-align: center;
   margin: 0 auto;
 }
+
+.hero {
+  position: fixed;
+  width: 100%;
+}
+
+.hero-bkg {
+  width: 100%;
+  max-height: 50%;
+  position: relative;
+  top: -100px;
+}
+
+.close-btn {
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 80px;
+  color: var(--primary-destructive-color);
+  font-size: 48px;
+  margin: auto;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+.close-btn:hover {
+  background-color: var(--secondary-destructive-color);
+  cursor: pointer;
+}
+
+.benefits {
+  padding: 40px;
+  width: 100%;
+  min-height: 20%;
+  background-color: var(--secondary-bg-color);
+  border-radius: 90px 90px 0px 0px;
+  position: fixed;
+  bottom: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.benefits>h1 {
+  color: var(--secondary-text-color);
+  text-align: start;
+  font-size: 40px;
+}
+
+.benefits>img {
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  bottom: -290px;
+  right: -200px;
+}
+
+.cards {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  background-color: var(--secondary-bg-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-bkg {
+    top: -50px;
+  }
+
+  .benefits {
+    min-height: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .close-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    top: 30px;
+    right: 30px;
+  }
+
+  .benefits {
+    min-height: 65%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-bkg {
+    top: 0px;
+  }
+
+  .benefits {
+    min-height: 70%;
+    border-radius: 60px 60px 0px 0px;
+  }
+
+  .benefits>h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .close-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .benefits {
+    min-height: 72%;
+  }
+}

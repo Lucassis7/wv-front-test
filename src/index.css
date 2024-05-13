@@ -5,4 +5,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --main-btn-bg-color: #DBDBDB;
+  --secondary-bg-color: #FFFFFF;
+  --hover-btn-bg-color: #858585;
+  --primary-text-color: #003777;
+  --secondary-text-color: #0747BA;
+  --primary-card-border-color: #0046C0;
+  --primary-destructive-color: #FF0000;
+  --secondary-destructive-color: #F08080;
 }
