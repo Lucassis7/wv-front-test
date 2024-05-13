@@ -2,6 +2,7 @@ import { useState } from "react";
 import Card from "./components/Card";
 import Button from "./components/Button";
 import "./App.css";
+import heroBackground from "./assets/hero-background.png";
 import clipboardIcon from "./assets/clipboard-icon.svg";
 import buildingIcon from "./assets/building-icon.svg";
 import listIcon from "./assets/list-icon.svg";
@@ -14,7 +15,10 @@ function App() {
     <>
       <main>
         {/* Hero container */}
-        <div></div>
+        <div className="hero">
+          <img src={heroBackground} alt="Pessoas felizes em reunião." />
+          <p className="close-btn">&#x2715;</p>
+        </div>
 
         {/* Option cards container */}
         <div>
