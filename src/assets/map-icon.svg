@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.272" height="50.271" viewBox="0 0 50.272 50.271">
+  <g id="Icon_Mapa" data-name="Icon Mapa" transform="translate(-344.906 -346.736)">
+    <path id="Mapa" d="M371.651,364.5l-9.621-3.849-16.024,6.41v28.843l16.024-6.41,16.024,6.41,16.024-6.41V370.269m-32.048-9.615V389.5m16.024,6.41V376.678" fill="none" stroke="#003777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+    <circle id="bolinha" cx="3.205" cy="3.205" r="3.205" transform="translate(380.275 359.185) rotate(-67.5)" fill="none" stroke="#003777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+    <path id="Marcador" d="M394.078,357.45c0,5.31-9.614,16.024-9.614,16.024s-9.615-10.714-9.615-16.024a9.615,9.615,0,0,1,19.229,0Z" fill="none" stroke="#003777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+  </g>
+</svg>
