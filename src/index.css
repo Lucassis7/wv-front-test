@@ -14,4 +14,6 @@
   --primary-card-border-color: #0046C0;
   --primary-destructive-color: #FF0000;
   --secondary-destructive-color: #F08080;
+  --popup-video-bg-color: #000000;
+  --popup-overlay-bg-color: #00000085;
 }

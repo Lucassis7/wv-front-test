@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import Button from "./components/Button";
+import Popup from "./components/Popup";
 import "./App.css";
 import heroBackground from "./assets/hero-background.png";
 import clipboardIcon from "./assets/clipboard-icon.svg";
@@ -12,8 +13,17 @@ import phoneIcon from "./assets/phone-icon.svg";
 import gearIcon from "./assets/gear-icon.svg";
 
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     <>
+      {/* Popup element */}
+      {showPopup && <Popup onClose={togglePopup} />}
+
       <main>
         {/* Hero container */}
         <div className="hero">
@@ -29,8 +39,16 @@ function App() {
         <div className="benefits">
           <h1>Como ficam meus benefícios?</h1>
           <div className="cards">
-            <Card cardName="Plano de Saúde" icon={clipboardIcon} />
-            <Card cardName="Previdência Privada" icon={buildingIcon} />
+            <Card
+              cardName="Plano de Saúde"
+              icon={clipboardIcon}
+              togglePopup={togglePopup}
+            />
+            <Card
+              cardName="Previdência Privada"
+              icon={buildingIcon}
+              togglePopup={togglePopup}
+            />
           </div>
           <img
             src={circlesImage}

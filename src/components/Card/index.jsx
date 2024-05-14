@@ -1,8 +1,8 @@
 import "./Card.css";
 
-function Card({ cardName, icon }) {
+function Card({ cardName, icon, togglePopup }) {
   return (
-    <div className="card">
+    <div className="card" onClick={togglePopup}>
       <img
         src={icon}
         alt={`Ícone do cartão ${cardName}.`}
